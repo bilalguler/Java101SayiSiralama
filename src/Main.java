@@ -1,3 +1,5 @@
+package src;
+
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -12,6 +14,8 @@ public class Main {
         System.out.print("Üçüncü sayı: ");
         c = scan.nextInt();
 
+        System.out.println("====================");
+
         if (a<b && a<c) {
             if (b<c){
                 System.out.println(a+"<"+b+"<"+c);
@@ -22,14 +26,13 @@ public class Main {
         } else if (b<a && b<c) {
             if (a<c){
                 System.out.println(b+"<"+a+"<"+c);
-            }
-            else {
+            } else {
                 System.out.println(b+"<"+c+"<"+a);
             }
         }else {
             if (a<b){
                 System.out.println(c+"<"+a+"<"+b);
-            }else {
+            } else {
                 System.out.println(c+"<"+b+"<"+a);
             }
         }
